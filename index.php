@@ -8,14 +8,21 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
-
+  a{
+    font-size :  18px;
+  }
 </style>
 </head>
 <body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: 100%;">
 <div allign ="center" style="top:0px">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
+    <a class="item" href="/basicbank/">
+      <img src="banksymb.jpg" alt="">
+    </a>
     <a class="item" href="/basicbank/">
       Home
     </a>

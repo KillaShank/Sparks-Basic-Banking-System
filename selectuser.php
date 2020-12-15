@@ -17,13 +17,17 @@ $row_count=mysqli_num_rows($result);
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
-.table
+#table
 {
-	width : 100%;
+  width : 80%;
   padding : 1px;
+  margin-left : 10%;
   
 }
+
 thead,tr{
   text-align: center;
 }
@@ -33,6 +37,14 @@ h1
   text-align : center;
   color : white;
 }
+#note{
+  width: 80%;
+  margin-left : 10%;
+}
+a{
+    font-size :  18px;
+    color : white;
+  }
 
 
 </style>
@@ -40,6 +52,9 @@ h1
 <body style="background-image:url('bankpic.webp');width=1920px; height=1080;background-repeat: no-repeat;background-size: 100%;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
+    <a class="item" href="/basicbank/">
+      <img src="banksymb.jpg" alt="">
+    </a>
     <a class="item" href="/basicbank/">
       Home
     </a>
@@ -55,10 +70,10 @@ h1
   </div>
 </div>
 <h1>Transact From </h1>
-<div class="ui inverted segment">
+<div class="ui inverted segment" id="note">
   <h3>NOTE : Please select the payee by clicking on their name.</h3>
 </div>
-<table class="ui inverted selectable celled table">
+<table class="ui inverted selectable celled table" id="table">
 <thead style="text-align: center;">
 <th>ID</th>
 <th>NAME</th>
@@ -73,7 +88,7 @@ while($row=mysqli_fetch_array($result))
 {
 	?>
 	<td><?php echo $row["id"]; ?></td>
-	<?php echo "<td><button class='ui inverted button'> <a href = 'transact.php?name=$row[1]'>$row[1]</a></button></td>";?>
+	<?php echo "<td><a href = 'transact.php?name=$row[1]'><button class='ui violet button'> $row[1]</button></a></td>";?>
 	<td><?php echo $row["acc_no"]; ?></td>
 	<td><?php echo $row["balance"]; ?></td>
 	<tr>
@@ -81,7 +96,7 @@ while($row=mysqli_fetch_array($result))
 <?php }
 ?>
 
-    </tr>
+</tr>
 </tbody>
 </table>
 

@@ -20,15 +20,15 @@ $row_count=mysqli_num_rows($result);
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
-body
-{
-	background-image: url("bankpic.jpg");
-}
 
-table
+
+#table
 {
-	width:100%;
+	width:80%;
+  margin-left: 10%;
 }
 h1
 {
@@ -42,13 +42,18 @@ thead, tr
 	text-align:center;
 	padding:8px;
 }
-
+a{
+    font-size :  18px;
+  }
 </style>
 </head>
 <body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: 100%;">
 
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
+    <a class="item" href="/basicbank/">
+      <img src="banksymb.jpg" alt="">
+    </a>
     <a class="item" href="/basicbank/">
       Home
     </a>
@@ -64,7 +69,7 @@ thead, tr
   </div>
 </div>
 <h1>Details of Customer</h1>
-<table class ="ui selectable inverted celled table">
+<table class ="ui selectable inverted celled table" id="table">
 <thead>
 <th>ID</th>
 <th>NAME</th>

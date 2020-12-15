@@ -24,12 +24,13 @@ $_SESSION['name']=$name;
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
-table
+#table
 {
-	font-family:arial, sans-serif;
-	border-collapse:collapse;
-	width:100%;
+	width:80%;
+  margin-left: 10%;
 }
 h1
 {
@@ -43,12 +44,22 @@ thead, tr
 	text-align:center;
 	padding:8px;
 }
+h3{
+  margin-left:10%;
+  color : white;
+}
+a{
+    font-size :  18px;
+  }
 
 </style>
 </head>
 <body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: 100%;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
+    <a class="item" href="/basicbank/">
+      <img src="banksymb.jpg" alt="">
+    </a>
     <a class="item" href="/basicbank/">
       Home
     </a>
@@ -66,7 +77,7 @@ thead, tr
 
 <h1>User information</h1>
 <h3>Transact from</h3> 
-<table class="ui selectable inverted celled table">
+<table class="ui selectable inverted celled table" id="table">
 <thead>
 <th>ID</th>
 <th>NAME</th>
@@ -90,8 +101,8 @@ thead, tr
 </div>
 <?php echo "<form method='post' action='transaction.php?name=$name'>"?><br><br>
 
-<h3 font-family=georgia>Transact To</h3><br>
-<table table class="ui selectable inverted celled table">
+<h3>Transact To</h3><br>
+<table table class="ui selectable inverted celled table" id="table">
 <tr>
 <td width="50%">Transfer to:</td>
 <td>

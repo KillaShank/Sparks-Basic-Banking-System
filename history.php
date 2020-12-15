@@ -8,7 +8,8 @@ $row_count=mysqli_num_rows($result);
 ?>
 <head>
 <title>TRANSACTION HISTORY</title>
-
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -16,9 +17,10 @@ $row_count=mysqli_num_rows($result);
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <style>
-table
+#table
 {
-	width:100%;
+	width:80%;
+  margin-left: 10%;
 }
 h1
 {
@@ -32,12 +34,17 @@ thead, tr
 	text-align:center;
 	padding:8px;
 }
-
+a{
+    font-size :  18px;
+  }
 </style>
 </head>
-<body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: 100%;">
+<body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: cover;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
+    <a class="item" href="/basicbank/">
+      <img src="banksymb.jpg" alt="">
+    </a>
     <a class="item" href="/basicbank/">
       Home
     </a>
@@ -53,7 +60,7 @@ thead, tr
   </div>
 </div>
 <h1>Details of Customer</h1>
-<table class ="ui selectable inverted celled table">
+<table class ="ui selectable inverted celled table" id="table">
 <thead>
 <th>ID</th>
 <th>SENDER NAME</th>
