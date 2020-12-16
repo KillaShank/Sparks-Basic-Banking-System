@@ -56,7 +56,7 @@ while($row = mysqli_fetch_array($result3)) {
 		break;
 	}
 	else{
-		$h="INSERT INTO transfers(senderName,recieverName,Amount) VALUES('".$d."','".$a."','".$b."')";
+		$h="INSERT INTO transfers(SenderName,RecieverName,TransAmount) VALUES('".$d."','".$a."','".$b."')";
 		mysqli_query($con,$h);
 	}
 	
@@ -74,7 +74,7 @@ alert("Your Transaction is Successful");
 </script>
 
 <?php 
-    echo "<script>location.href='customerdetails.php';</script>";
+    echo "<script>location.href='history.php';</script>";
 ?>
 
 

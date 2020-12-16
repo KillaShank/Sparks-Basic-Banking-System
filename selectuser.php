@@ -49,7 +49,7 @@ a{
 
 </style>
 </head>
-<body style="background-image:url('bankpic.webp');width=1920px; height=1080;background-repeat: no-repeat;background-size: 100%;">
+<body style="background-image:url('bankback.jpeg');width=1920px; height=1080;background-repeat: no-repeat;background-size: 100%;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
     <a class="item" href="/basicbank/">

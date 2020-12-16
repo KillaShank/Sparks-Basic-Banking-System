@@ -39,7 +39,7 @@ a{
   }
 </style>
 </head>
-<body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: cover;">
+<body style = "background-image : url('bankback.jpeg');background-repeat: no-repeat;background-size: cover;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
     <a class="item" href="/basicbank/">
@@ -59,13 +59,13 @@ a{
     </a>
   </div>
 </div>
-<h1>Details of Customer</h1>
+<h1>Transaction History</h1>
 <table class ="ui selectable inverted celled table" id="table">
 <thead>
 <th>ID</th>
-<th>SENDER NAME</th>
-<th>RECIEVER NAME</th>
-<th>ACCOUNT </th>
+<th>SENDER'S NAME</th>
+<th>RECIEVER'S NAME</th>
+<th>AMOUNT </th>
 </thead>
 <tbody>
 <tr>
@@ -73,9 +73,9 @@ a{
 while($row=mysqli_fetch_array($result)){
 	?>
 	<td><?php echo $row["id"]; ?></td>
-	<td><?php echo $row["senderName"]; ?></td>
-	<td><?php echo $row["recieverName"]; ?></td>
-	<td><?php echo $row["Amount"]; ?></td>
+	<td><?php echo $row["SenderName"]; ?></td>
+	<td><?php echo $row["RecieverName"]; ?></td>
+	<td><?php echo $row["TransAmount"]; ?></td>
 <tr>
 <?php }
 ?>

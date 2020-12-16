@@ -54,7 +54,7 @@ a{
 
 </style>
 </head>
-<body style = "background-image : url('bankpic.webp');background-repeat: no-repeat;background-size: 100%;">
+<body style = "background-image : url('bankback.jpeg');background-repeat: no-repeat;background-size: 100%;">
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu">
     <a class="item" href="/basicbank/">
