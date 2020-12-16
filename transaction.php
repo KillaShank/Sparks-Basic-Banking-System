@@ -36,7 +36,6 @@ if (!$r2) {
 	exit();
 }
 while($row = mysqli_fetch_array($r2)){
-	$f = $row[3];
 	if($flag==0){
 		$z= "UPDATE customers SET balance=balance +'$amt' WHERE name='$user'";
 		mysqli_query($con,$z);
