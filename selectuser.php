@@ -58,13 +58,13 @@ a{
     <a class="item" href="/basicbank/">
       Home
     </a>
-    <a class="item" href="customerdetails.php" target="frame">
+    <a class="item" href="customerdetails.php">
       Customers
     </a>
-    <a class="item" href="selectuser.php" target="frame">
+    <a class="item" href="selectuser.php">
       Transaction
     </a>
-    <a class="item" href="history.php" target="frame">
+    <a class="item" href="history.php">
       Transaction History
     </a>
   </div>

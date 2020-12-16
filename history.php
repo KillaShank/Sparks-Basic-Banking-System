@@ -2,7 +2,7 @@
 <?php
 session_start();
 include 'connection.php';
-$q="select * from transfers";
+$q="select * from transactions";
 $result=mysqli_query($con,$q);
 $row_count=mysqli_num_rows($result);
 ?>
@@ -48,13 +48,13 @@ a{
     <a class="item" href="/basicbank/">
       Home
     </a>
-    <a class="item" href="customerdetails.php" target="frame">
+    <a class="item" href="customerdetails.php">
       Customers
     </a>
-    <a class="item" href="selectuser.php" target="frame">
+    <a class="item" href="selectuser.php">
       Transaction
     </a>
-    <a class="item" href="history.php" target="frame">
+    <a class="item" href="history.php">
       Transaction History
     </a>
   </div>
