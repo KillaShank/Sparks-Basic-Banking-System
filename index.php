@@ -93,8 +93,8 @@ h2 a {
 </head>
 <body style = "background-image : url('bankback.jpeg');background-repeat: no-repeat;background-size: 100%;">
 <div allign ="center" style="top:0px">
-<div class="ui inverted segment">
-  <div class="ui inverted secondary menu">
+<div class="ui segment">
+  <div class="ui secondary menu">
     <a class="item" href="/basicbank/">
       <img src="banksymb.jpg" alt="">
     </a>
@@ -112,13 +112,13 @@ h2 a {
     </a>
   </div>
 </div>
-<div class="ui inverted raised very padded container segment">
+<div class="ui raised very padded container segment">
   <div class="ui text container">
-      <h1 class="ui inverted header">
+      <h1 class="ui header">
         Bank Transaction System
       </h1>
       <h2>Bank Transaction Webapp made by <a class="effect-box" style="color:purple;" href="https://linktr.ee/sankalp007">Sankalp Verma</a></h2>
-      <a href="selectuser.php"><div class="ui huge inverted violet button">Make a transaction<i class="right arrow icon"></i></div></a>
+      <a href="selectuser.php"><div class="ui huge violet button">Make a transaction<i class="right arrow icon"></i></div></a>
 </div>
 </div>
 
